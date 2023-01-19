@@ -1,15 +1,3 @@
-import os
-import re
-import shutil
-import sys
-from pathlib import Path
-
-import docutils
-import sphinx
-from sphinx.ext import graphviz
-from sphinx.util import logging
-
-
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
@@ -29,8 +17,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    # Custom Odoo theme
-    'odoo_theme',
 ]
 
 
@@ -41,18 +27,9 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ['std']
 
-templates_path = ['../../extensions']
+templates_path = ['_templates']
 
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-# -------------------------------------------------------------------------------------------------------------------------
-
-#=== Options for HTML output ===#
-
-html_theme = 'odoo_theme'
-
-
-# The paths that contain custom themes, relative to this directory.
-html_theme_path = ['../../extensions']
