@@ -19,6 +19,17 @@ extensions = [
     'sphinx.ext.intersphinx',
 ]
 
+#=== Options for HTML output ===#
+
+html_theme = 'odoo_theme'
+
+# The name of the Pygments (syntax highlighting) style to use.
+# See extensions/odoo_theme/pygments_override.py
+pygments_style = 'odoo'
+
+# The paths that contain custom themes, relative to this directory.
+html_theme_path = ['../../extensions']
+
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
