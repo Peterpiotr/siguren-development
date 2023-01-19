@@ -52,9 +52,6 @@ epub_show_urls = 'footnote'
 
 html_theme = 'odoo_theme'
 
-# The name of the Pygments (syntax highlighting) style to use.
-# See extensions/odoo_theme/pygments_override.py
-pygments_style = 'odoo'
 
 # The paths that contain custom themes, relative to this directory.
 html_theme_path = ['extensions']
