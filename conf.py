@@ -19,16 +19,7 @@ extensions = [
     'sphinx.ext.intersphinx',
 ]
 
-#=== Options for HTML output ===#
 
-html_theme = 'odoo_theme'
-
-# The name of the Pygments (syntax highlighting) style to use.
-# See extensions/odoo_theme/pygments_override.py
-pygments_style = 'odoo'
-
-# The paths that contain custom themes, relative to this directory.
-html_theme_path = ['../../extensions']
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -38,9 +29,19 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
-# -- Options for HTML output
-
-html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -------------------------------------------------------------------------------------------------------------------------
+
+#=== Options for HTML output ===#
+
+html_theme = 'odoo_theme'
+
+# The name of the Pygments (syntax highlighting) style to use.
+# See extensions/odoo_theme/pygments_override.py
+pygments_style = 'odoo'
+
+# The paths that contain custom themes, relative to this directory.
+html_theme_path = ['extensions']
