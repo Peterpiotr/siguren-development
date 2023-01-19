@@ -6,7 +6,6 @@ from pathlib import Path
 
 import docutils
 import sphinx
-from pygments.lexers import JsonLexer, XmlLexer
 from sphinx.ext import graphviz
 from sphinx.util import logging
 
@@ -30,6 +29,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    # Custom Odoo theme
+    'odoo_theme',
 ]
 
 
