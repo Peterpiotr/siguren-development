@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'piccolo_theme',
 ]
 
 intersphinx_mapping = {
@@ -31,4 +32,6 @@ templates_path = ['_templates']
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-html_theme = 'alabaster'
+html_theme_path = ['../../extensions']
+
+html_theme = 'piccolo_theme'
