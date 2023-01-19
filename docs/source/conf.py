@@ -55,4 +55,4 @@ html_theme = 'odoo_theme'
 
 
 # The paths that contain custom themes, relative to this directory.
-html_theme_path = ['extensions']
+html_theme_path = ['../../extensions']
