@@ -19,8 +19,6 @@ extensions = [
     'sphinx.ext.intersphinx',
 ]
 
-
-
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
@@ -33,3 +31,4 @@ templates_path = ['_templates']
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
+html_theme = 'alabaster'
