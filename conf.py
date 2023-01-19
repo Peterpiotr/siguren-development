@@ -1,3 +1,16 @@
+import os
+import re
+import shutil
+import sys
+from pathlib import Path
+
+import docutils
+import sphinx
+from pygments.lexers import JsonLexer, XmlLexer
+from sphinx.ext import graphviz
+from sphinx.util import logging
+
+
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
